@@ -1,0 +1,13 @@
+#define MIN(a,b)  (((a) < (b)) ? (a) : (b))
+#define MAX(a, b) (((a) > (b)) ? (a) : (b))
+#define MAX3(a, b, c)  (((a) > (MAX(b, c)) ? (a) : (MAX(b, c))))  
+#define SHIFT(v, n)   ((n) > (0)  ? ((v) << (n)) : ((v) >> -(n)))
+#define IS_UPPER_CASE(c)   (((c) >= ('A') && (c) <= ('Z')) ? 1 : 0)
+#define IS_LOWER_CASE(x) ( ((x) >= 'a') && ((x) <= 'z') ) 
+#define IS_ALPHABETIC(c) IS_LOWER_CASE(c) || IS_UPPER_CASE(c)
+#define IS_DIGIT(d) ( ((d) >= '0') && ((d) <= '9') )
+#define IS_SPECIAL(s)  ( (!IS_ALPHABETIC(s)) && (!IS_DIGIT(s)) )
+#define ABSOLUTE_VALUE(n)  ( ((n) < 0) ? -(n) : (n) )
+
+#define printint(var) printf (# var " = %i\n", var)
+#define printx(n)  printint(x ## n)

@@ -1,0 +1,37 @@
+The exit Function
+At times, you might want to force the termination of a program, such as when an error condition is detected by a program.You know that program execution is automatically terminated whenever the last statement in main is executed or when executing a return from main.To explicitly terminate a program, no matter from what point you are exe- cuting, the exit function can be called. The function call
+exit (n);
+has the effect of terminating (exiting from) the current program.Any open files are auto- matically closed by the system. The integer value n is called the exit status, and has the same meaning as the value returned from main.
+The standard header file <stdlib.h> defines EXIT_FAILURE as an integer value that you can use to indicate the program has failed and EXIT_SUCCESS to be one that you can use to indicate it has succeeded.
+When a program terminates simply by executing the last statement in main, its exit status is undefined. If another program needs to use this exit status, you mustn’t let this happen. In such a case, make certain that you exit or return from main with a defined exit status.
+As an example of the use of the exit function, the following function causes the pro- gram to terminate with an exit status of EXIT_FAILURE if the file specified as its argu- ment cannot be opened for reading. Naturally, you might want to return the fact that the open failed instead of taking such a drastic action by terminating the program.
+#include <stdlib.h> #include <stdio.h>
+FILE *openFile (const char *file) {
+FILE *inFile;
+if ( (inFile = fopen (file, "r")) == NULL ) {
+fprintf (stderr, "Can't open %s for reading.\n", file); exit (EXIT_FAILURE);
+}
+return inFile; }
+Remember that there’s no real difference between exiting or returning from main.They both terminate the program, sending back an exit status.The main difference between exit and return is when they’re executed from inside a function other than main. The
+                                        Exercises 371 exit call terminates the program immediately whereas return simply transfers control
+back to the calling routine.
+Renaming and Removing Files
+The rename function from the library can be used to change the name of a file. It takes two arguments: the old filename and the new filename. If for some reason the renaming operation fails (for example, if the first file doesn’t exist, or the system doesn’t allow you to rename the particular file),rename returns a nonzero value.The code
+if ( rename ("tempfile", "database") ) { fprintf (stderr, "Can't rename tempfile\n"); exit (EXIT_FAILURE);
+}
+renames the file called tempfile to database and checks the result of the operation to ensure it succeeded.
+The remove function deletes the file specified by its argument. It returns a nonzero value if the file removal fails.The code
+if ( remove ("tempfile") ) {
+fprintf (stderr, "Can't remove tempfile\n");
+exit (EXIT_FAILURE); }
+attempts to remove the file tempfile and writes an error message to standard error and exit if the removal fails.
+Incidentally, you might be interested in using the perror function to report errors from standard library routines. For more details, consult Appendix B.
+This concludes our discussion of I/O operations under C. As mentioned, not all of the library functions are covered here due to lack of space.The standard C library con- tains a wide selection of functions for performing operations with character strings, for random I/O, mathematical calculations, and dynamic memory management. Appendix B lists many of the functions inside this library.
+Exercises
+1. Type in and run the three programs presented in this chapter. Compare the output produced by each program with the output presented in the text.
+2. Go back to programs developed earlier in this book and experiment with redirect- ing their input and output to files.
+3. Write a program to copy one file to another, replacing all lowercase characters with their uppercase equivalents.
+                                        372 Chapter 16 Input and Output Operations in C
+4. Write a program that merges lines alternately from two files and writes the results to stdout. If one file has less lines than the other, the remaining lines from the larger file should simply be copied to stdout.
+5. Write a program that writes columns m through n of each line of a file to stdout. Have the program accept the values of m and n from the terminal window.
+6. Write a program that displays the contents of a file at the terminal 20 lines at a time. At the end of each 20 lines, have the program wait for a character to be entered from the terminal. If the character is the letter q, the program should stop the display of the file; any other character should cause the next 20 lines from the file to be displayed.

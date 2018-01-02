@@ -1,0 +1,10 @@
+		
+Does anybody really know what time it is?
+
+Using a 24hr clock....
+Enter a time using the following format (hh:mm:ss): 
+Enter a date (mm dd yyyy): 
+
+The new Date and Time is 
+02 17, 2017  10:23:56
+

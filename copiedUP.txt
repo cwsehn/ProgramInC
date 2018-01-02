@@ -1,0 +1,5 @@
+Here's a new addition of this file which uses returns to establish new lines
+line2 text1...hopefully I didn't go over 81 chars there...
+line3 text1...because I am trying to determine it fgets is reading the \n char
+last line text1 ...we shall see
+

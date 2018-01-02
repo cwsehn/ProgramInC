@@ -1,0 +1,36 @@
+
+Floats and Doubles:
+12.978000 1.297800e+01 12.978
+12.98 1.30e+01
+13 1e+01
+  12.98 1.30e+01
+-97.458300 -9.745830e+01 -97.4583
+-97.458
+  -97.46
+
+Characters:
+X
+  X  X
+58
+
+Strings:
+abcdefghijklmnopqrstuvwxyz
+abcde
+    abcdefghijklmnopqrstuvwxyz
+               abcde
+abcde               
+
+Pointers:
+0x7fff51adf904 0x7fff51adf90b
+
+This is fun.
+c1 = 4, c2 = 12
+
+Integers:
+425 651 1a9 425
+1a9 1A9 0x1a9 0X1A9
++425  425 0000425 0000425
+17 21 11 17
+61817 170571 f179 61817
+75000 222370 124f8 75000
+1311768465173141112 110642547402215053170 1234567812345678 1311768465173141112

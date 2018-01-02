@@ -1,0 +1,5 @@
+
+		Absolute Floating Values
+
+Enter a floating point value: I need a floating point value...nothing else...you will need to restart...
+The absolute value of -93857.3 is 93857.3

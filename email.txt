@@ -1,0 +1,58 @@
+David,
+
+
+I am a dedicated student of your Harvard CS50 class, online through EdX….Your course is in the process of shaping my future and changing my life …and I am very appreciative of the opportunities afforded by the program….
+
+Unfortunately, I’ve suddenly run into a large frustration with the (lack of) feedback I have received through the submission process….
+
+I discovered CS50 back in October or November while searching for ways to educate myself in computer science …an ambitious career adjustment after seventeen years as a television producer….I have been supplementing 
+
+your CS50 content with a multitude of other learning resources over the past year…including Khan Academy, Treehouse, Code School, CIW courses and Programming in C.
+
+….but i digress….
+
+…the issue at hand is pset4 and Recover…I initially completed the program to recover the 50 jpegs from the corrupted file sometime ago ….December…maybe early January….
+
+as per usual, another well designed assignment for developing programming skills ….and at that time, I regarded accomplishing the task among my greatest accomplishments in computer programming…..however, the CS50 submissions process
+
+was on hiatus at the time…
+
+Subsequently, I have continued my progress …and most recently completed pset7 “C$50 Finance”…I absolutely love this course…..For one thing I currently trade stocks on-line…..and my experiences with graphic production in 
+
+my time as a television producer made the digital image manipulation assignments of particular interest to me….well suffice it to say …everything seems to be “adding up” quite nicely…..
+
+….back to the issue at hand….
+
+…When the new submission process came back on-line recently, I determined I would submit my previously completed assignments one at a time…..a good chance to review the enormous amount of content and learning that 
+
+I’ve accomplished over the past few months…..
+
+When it came time to submit Recover, I recognized that while my program did recover the 50 jpegs without corruption….there were some apparent issues with memory leakage….which,
+
+at the time I first completed the assignment were obviously beyond my understanding…….
+
+Therefore, I did not submit that version…..I endeavored instead to re-write the program…..and took great attention to detail to get it right……in the process I learned even more about dynamic memory allocation, memory leaks, 
+
+pointers, structs, File functions…..pointers to pointers…..God knows what all……it was a fantastic experience….a great 're-direction' back to C language after spending the past few weeks in the world of Python development 
+
+….and one that I am proud to say I felt I had accomplished quite excellently…..after all, the program returns all 50 JPEG files intact, ends immediately at EOF……Valgrind confirms Zero potential
+
+data leaks….and CS50 “Check50” command renders all green smileys………
+
+https://github.com/submit50/cwsehn/tree/cs50/2017/x/recover
+
+…my score from the new GitHub Bot…….0 of 100…….
+
+I will forward you my short submission to the EdX “support” team along with their response….which resolved nothing…..
+
+…at this point, I score the Bot - Zero of 100……and look forward to getting this issue cleared up …..
+
+I hope you will help ……
+
+Again, I could never thank you enough for the opportunities afforded me by CS50……
+
+
+Your dedicated student, on-line class-member and enthusiastic CS50 devotee…
+
+-Chris William Sehnert
+Mound, Minnesota
